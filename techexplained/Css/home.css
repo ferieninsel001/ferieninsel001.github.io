@@ -84,3 +84,13 @@ p {
 .tool-button:hover {
     background-color: #333;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    h2{
+        font-size: 125%;
+    }
+}
