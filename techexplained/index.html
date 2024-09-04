@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--
+    Copyright © 2024 ferieninsel001. All rights reserved.
+    All rights reserved. This software is the property of ferieninsel001. 
+    Unauthorized copying of this code, in whole or in part, is strictly prohibited.
+    -->
+
+    <link rel="stylesheet" href="Css/index.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
+    <meta name="google-site-verification" content="IpFr1i8bI5n2uVgnOB_tVQZ2C2-zm6Xwuq4D_l0YjO4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tools for teachers to use in class">
+    <title>LessonGear</title></head>
+<body>   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+
+            darkModeToggle.addEventListener('change', function () {
+                document.documentElement.classList.toggle('dark-mode', darkModeToggle.checked);
+            });
+
+            // Check the user's preference from localStorage
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                darkModeToggle.checked = true;
+                document.documentElement.classList.add('dark-mode');
+            }
+
+            // Save user's preference to localStorage
+            darkModeToggle.addEventListener('change', function () {
+                localStorage.setItem('darkMode', darkModeToggle.checked ? 'enabled' : 'disabled');
+            });
+        });
+    </script>
+
+    <div id="logo-container">
+        <img id="logo" src="commonUI/elements/heading.svg">
+    </div>
+    
+    <h1>Welcome to TechExplained</h1>
+    <h2>Here you will find very simple step by step guides for your computer:</h2>
+    <h3>scan, write and get to know all the microsoft tools</h3>
+
+    <div class="main-content">
+        <div class="tool-card">
+            <h4>Introduction to onedrive</h4>
+            <p>How to organize files and back them up automatically</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div> 
+
+        <div class="tool-card">
+            <h4>Advanced Googling 101</h4>
+            <p>How to improve your googling skills</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        <div class="tool-card">
+            <h4>Internet Security 101</h4>
+            <p>How to use a password manager and be more secure when browsing the internet</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        <div class="tool-card">
+            <h4>Install programms from the internet</h4>
+            <p>Update and instalation guide</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        <div class="tool-card">
+            <h4>Cache And History Cleaning</h4>
+            <p>How to delete old bulk and relieve your system</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        
+        <div class="tool-card">
+            <h4>Two-factor authentication 101</h4>
+            <p>understand and learn how to use two-factor authentication</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        <div class="tool-card">
+            <h4>Checklist before Support</h4>
+            <p>Simple things to try before calling the Support</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        <div class="tool-card">
+            <h4>Scams, Phishing and Spoofing</h4>
+            <p>Get to know the most common Scams!</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+
+        <div class="tool-card">
+            <h4>Efficiency with Shortcuts</h4>
+            <p>Use Shortcuts to work more efficiently</p>
+            <button class="tool-button" onclick="window.location.href='commonUI/elements/in_dev.html'">Learn!</button>
+        </div>
+    
+    </div>
+
+        <footer>
+
+    <div class="buttoncontainer">
+        <label class="switch">
+
+            <input type="checkbox" id="darkModeToggle">
+
+            <span class="slider"></span>
+        </label>            <p>Toggle Dark Mode</p>
+        <hr>
+        
+        <p>© 2024 ferieninsel001</p>
+    </div>
+
+      </footer>
+</body>
+</html>
