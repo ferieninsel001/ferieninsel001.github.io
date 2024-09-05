@@ -7,21 +7,36 @@ body {
     margin-right: 15%;
     font-weight: lighter;
 
-
-
 }
 
+.img-back-to-home{
+        top: 10px; 
+        left: 10px; 
+        width: 5%; 
+        padding: 1%;
+        height: auto; 
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            width: 10%;
+        }
+
+        @media (max-width: 480px) {
+            width: 15%;
+}}
 h1 {
-    font-size: 500%;
+    font-size: 400%;
+    color: #333;
     margin: 0px;
     margin-top: 10px;
     letter-spacing: 1px;
     font-weight: lighter;
+    @media (max-width: 768px) {font-size: 250%;}
 
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 150%;
     margin-bottom: 15px;
     color: #333;
     margin-top: 5px;
@@ -110,14 +125,31 @@ footer {
     align-items: center;
   }
 
+.img-large {
+    width: 100%;
+    height: auto; /* Ensures the image scales proportionally */
+    border-radius: 30px; /* Adjust the value to change the corner roundness */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    display: block; /* Prevents unwanted whitespace below the image */
+}
+
+.img-small {
+    width: 65%;
+    height: auto; /* Ensures the image scales proportionally */
+    border-radius: 30px; /* Adjust the value to change the corner roundness */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    display: block; /* Prevents unwanted whitespace below the image */
+}
 
   hr {
     position: left;
     top: 20px;
     border: none;
-    height: 2px;
+    height: 0.5px;
     background: #333;
-    width:110%;
+    width:100%;
     margin-left: 0px;
     padding: 0;
     left: 0;
@@ -138,10 +170,6 @@ body {
     max-width: 800px;
     margin: 5px auto;
     text-align: left;
-}
-
-h1 {
-    color: #333;
 }
 
 /* Switch Styles */
