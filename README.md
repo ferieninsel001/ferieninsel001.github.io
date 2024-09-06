@@ -20,6 +20,6 @@ If you stumble upon something you’d like to improve (or fix), go ahead and ope
 
 ## Contact
 
-Got questions? Wanna chat? Just wanna say hi? Feel free to open an issue here.
+Got questions? Wanna chat? Just wanna say hi? Feel free to open an issue or join the discussion page.
 
 Thanks for stopping by! 😁
