@@ -141,7 +141,10 @@ footer {
     object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
     max-width: 100%; /* Ensures the image doesn't exceed its container */
     display: block; /* Prevents unwanted whitespace below the image */
+
 }
+
+@media (max-width: 768px){.img-small{width: 100%;}}
 
   hr {
     position: left;
