@@ -52,10 +52,10 @@ h3 {
 }
 
 h4 {
-    font-size: 200%;
+    font-size: 130%;
     margin-bottom: 15px;
     color: #333;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 h6 {
@@ -144,8 +144,16 @@ footer {
 
 }
 
-@media (max-width: 768px){.img-small{width: 100%;}}
+.img-small-nocrop {
+    width: 65%;
+    height: auto; /* Ensures the image scales proportionally */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    display: block; /* Prevents unwanted whitespace below the image */
 
+}
+
+@media (max-width: 768px){.img-small{width: 100%;}.img-small-nocrop{width: 100%;}}
   hr {
     position: left;
     top: 20px;
