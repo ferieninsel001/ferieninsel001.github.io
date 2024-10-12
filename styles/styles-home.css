@@ -59,9 +59,7 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-.project-section {
-    background: #e3efff; /* Light blue background for projects */
-}
+
 
 .project-grid {
     display: grid;
@@ -86,9 +84,22 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-.project-card a {
+/* Button styles */
+.project-card a.button {
+    display: inline-block;
+    padding: 10px 55px;
+    margin-top: 10px;
+    font-size: 16px;
     color: #ffffff;
-    text-decoration: underline;
+    background-color: #16456b; /* Bootstrap Primary Color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-card a.button:hover {
+    background-color: #0056b3; /* Darker Blue */
 }
 
 footer {
