@@ -5,22 +5,24 @@
 }
 
 body {
-    font-family: sans-serif; /* Default sans-serif font */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f4f8;
-    color: #333;
+    background-color: #F0F4F8;
+    color: #333333;
 }
 
 header {
-    background: #00274d; /* Navy blue */
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333333;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin-bottom: 10px;
     font-size: 2.5rem;
+    letter-spacing: 1px;
 }
 
 header p {
@@ -38,8 +40,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #2C3E50;
     text-decoration: none;
+    font-weight: 600; 
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E74C3C;
 }
 
 .about-section,
@@ -48,8 +56,8 @@ nav ul li a {
     padding: 20px;
     background: #ffffff;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-section h2,
@@ -57,9 +65,8 @@ nav ul li a {
 .contact-section h2 {
     text-align: center;
     margin-bottom: 10px;
+    color: #333;
 }
-
-
 
 .project-grid {
     display: grid;
@@ -69,11 +76,17 @@ nav ul li a {
 }
 
 .project-card {
-    background: #00274d; /* Navy blue */
-    color: #ffffff;
-    border-radius: 8px;
+    background: #FFFFFF;
+    color: #2C3E50;
+    border: 2px solid #2C3E50;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 .project-card h3 {
@@ -84,29 +97,31 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-/* Button styles */
 .project-card a.button {
     display: inline-block;
     padding: 10px 55px;
     margin-top: 10px;
     font-size: 16px;
-    color: #ffffff;
-    background-color: #16456b; /* Bootstrap Primary Color */
-    border: none;
+    color: #2C3E50; 
+    background-color: transparent;
+    border: 2px solid#2C3E50;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s, color 0.7s;
 }
 
 .project-card a.button:hover {
-    background-color: #0056b3; /* Darker Blue */
+    background-color: #E74C3C;
+    color: #ffffff;
+    border: none;
+
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #00274d; /* Navy blue */
-    color: #ffffff;
+    background: #2C3E50; 
+    color: #FFFFFF; 
 }
 
 footer p {
