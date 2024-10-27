@@ -111,9 +111,9 @@ nav ul li a:hover {
 }
 
 .project-card a.button:hover {
-    background-color: #E74C3C;
+    background-color: #2C3E50;
     color: #ffffff;
-    border: none;
+    /* border-color: none; */
 
 }
 
